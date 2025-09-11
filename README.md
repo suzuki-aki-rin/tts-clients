@@ -41,19 +41,30 @@ See each setup.py
 # If VoicevoxClient, use VoicevoxClient and VoicevoxConfig
 # Function names are common.
 
-# Initiate
-config = EdgeTTSConfig(voice="en-US-ChristopherNeural")
-tts_client = EdgeTTSClient(config)
+import asyncio
+from edge_tts_client import EdgeTTSClient, EdgeTTSConfig
 
-# Create and play speech
-await tts_client.create_play_speech("hello")
 
-# Update config
-tts_client.update_config(voice="en-US-MonicaNeural")
+async def test() -> None:
+    try:
+        # Initiate
+        config = EdgeTTSConfig(voice="en-US-ChristopherNeural")
+        tts_client = EdgeTTSClient(config)
 
-# Create speech file
-speech = await tts_client.create_speech(text="hello", output_file="hello.mp3")
+        # Create and play speech
+        await tts_client.create_play_speech("hello")
 
-# Play speech
-await tts_client.play_speech(speech)
+        # Update config
+        tts_client.update_config(voice="en-US-MonicaNeural")
+
+        # Create speech file
+        speech = await tts_client.create_speech(text="hello", output_file="hello.mp3")
+
+        # Play speech
+        await tts_client.play_speech(speech)
+    except Exception as e:
+        print(f"{e}")
+
+
+asyncio.run(test())
 ```
