@@ -1,0 +1,55 @@
+en-US-AdamMultilingualNeural          Male                           warm, engaging, deep
+en-US-AlloyTurboMultilingualNeural    Male                           Versatile
+en-US-AmandaMultilingualNeural        Female                         clear, bright, youthful
+en-US-AmberNeural                     Female                         Whimsical, Upbeat, Light-Hearted
+en-US-AnaNeural                       Female                         Curious, Cheerful, Engaging
+en-US-AndrewMultilingualNeural        Male                           Confident, Casual, Warm
+en-US-AndrewNeural                    Male                           Confident, Authentic, Warm
+en-US-AriaNeural                      Female                         Crisp, Bright, Clear
+en-US-AshleyNeural                    Female                         Sincere, Approachable, Honest
+en-US-AvaMultilingualNeural           Female                         Pleasant, Friendly, Caring
+en-US-AvaNeural                       Female                         Pleasant, Caring, Friendly
+en-US-BrandonMultilingualNeural       Male                           Warm, Engaging, Authentic
+en-US-BrandonNeural                   Male                           Warm, Engaging, Authentic
+en-US-BrianMultilingualNeural         Male                           Sincere, Calm, Approachable
+en-US-BrianNeural                     Male                           Sincere, Calm, Approachable
+en-US-ChristopherMultilingualNeural   Male                           Deep, Warm
+en-US-ChristopherNeural               Male                           Deep, Warm
+en-US-CoraMultilingualNeural          Female                         Empathetic, Formal, Sincere
+en-US-CoraNeural                      Female                         Empathetic, Formal, Sincere
+en-US-DavisMultilingualNeural         Male                           soothing, calm, smooth
+en-US-DavisNeural                     Male                           Soothing, Calm, Smooth
+en-US-DerekMultilingualNeural         Male                           confident, knowledgable, formal
+en-US-DustinMultilingualNeural        Male                           youthful, clear, thoughtful
+en-US-EchoTurboMultilingualNeural     Male
+en-US-ElizabethNeural                 Female                         Authoritative, Formal, Serious
+en-US-EmmaMultilingualNeural          Female                         Cheerful, Light-Hearted, Casual
+en-US-EmmaNeural                      Female                         Cheerful, Light-Hearted, Casual
+en-US-EricNeural                      Male                           Confident, Sincere, Warm
+en-US-FableTurboMultilingualNeural    Neutral
+en-US-GuyNeural                       Male                           Light-Hearted, Whimsical, Friendly
+en-US-JacobNeural                     Male                           Sincere, Formal, Confident
+en-US-JaneNeural                      Female                         Serious, Approachable, Upbeat
+en-US-JasonNeural                     Male                           Gentle, Shy, Polite
+en-US-JennyMultilingualNeural         Female                         Sincere, Pleasant, Approachable
+en-US-JennyNeural                     Female                         Sincere, Pleasant, Approachable
+en-US-KaiNeural                       Male                           Sincere, Pleasant, Bright, Clear, Friendly, Warm
+en-US-LewisMultilingualNeural         Male                           knowledgable, formal, confident
+en-US-LolaMultilingualNeural          Female                         sincere, calm, warm
+en-US-LunaNeural                      Female                         Sincere, Pleasant, Bright, Clear, Friendly, Warm
+en-US-MichelleNeural                  Female                         Confident, Authentic, Warm
+en-US-MonicaNeural                    Female                         Mature, Authentic, Warm
+en-US-NancyMultilingualNeural         Female                         casual, youthful, approachable
+en-US-NancyNeural                     Female                         Confident, Serious, Mature
+en-US-NovaTurboMultilingualNeural     Female                         Deep, Resonant
+en-US-OnyxTurboMultilingualNeural     Male
+en-US-PhoebeMultilingualNeural        Female                         youthful, upbeat, confident
+en-US-RogerNeural                     Male                           Serious, Formal, Confident
+en-US-RyanMultilingualNeural          Male                           Professional, Authentic, Sincere
+en-US-SamuelMultilingualNeural        Male                           sincere, warm, expressive
+en-US-SaraNeural                      Female                         Sincere, Calm, Confident
+en-US-SerenaMultilingualNeural        Female                         formal, confident, mature
+en-US-ShimmerTurboMultilingualNeural  Female
+en-US-SteffanMultilingualNeural       Male                           Casual, Thoughtful
+en-US-SteffanNeural                   Male                           Mature, Authentic, Warm
+en-US-TonyNeural                      Male                           Thoughtful, Authentic, Sincere
