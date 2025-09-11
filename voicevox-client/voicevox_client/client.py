@@ -10,11 +10,11 @@ from pathlib import Path
 import httpx
 import simpleaudio as sa
 
-from voicevox_client.common.abstracts import (
+from tts_shared.abstracts import (
     TTSClient,
     TTSConfig,
 )
-from voicevox_client.common.exceptions import (
+from tts_shared.exceptions import (
     TTSClientError,
     ConfigError,
     CreateSpeechError,
