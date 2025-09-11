@@ -11,7 +11,7 @@ setup(
         "audioop-lts~=0.2.2",
         "pydub~=0.25.1",
         "simpleaudio-patched~=1.0.5",
-        "tss-shared @ git+https://github.com/suzuki-aki-rin/tts-clients.git@main#egg=tts-shared&subdirectory=tts-shared",
+        "tts-shared @ git+https://github.com/suzuki-aki-rin/tts-clients.git@main#egg=tts-shared&subdirectory=tts-shared",
     ],
     python_requires="~=3.13",
 )
