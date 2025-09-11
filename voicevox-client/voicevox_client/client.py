@@ -130,13 +130,13 @@ class VoicevoxClient(TTSClient):
                 f"Error response {e.response.status_code} while requesting {e.request.url}"
             )
             raise GenerateQueryError(
-                f"Query generation failed. Bad response {e.response.status_code} while requesting {e.request.url}",
+                f"Query generation failed: Bad response {e.response.status_code} while requesting {e.request.url}",
                 original_exception=e,
             ) from e
         except httpx.RequestError as e:
             logger.error(f"An error occurred while requesting {e.request.url}: {e}")
             raise GenerateQueryError(
-                f"Query generation failed. Bad request for {e.request.url}",
+                f"Query generation failed: Request failed for {e.request.url}",
                 original_exception=e,
             ) from e
         except Exception as e:
@@ -263,7 +263,7 @@ async def main():
     try:
         client = VoicevoxClient()
         await client.create_play_speech("hello")
-        client.update_config()
+        client.update_config(speaker=5)
 
     except (
         ConfigError,
