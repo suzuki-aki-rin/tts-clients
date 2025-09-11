@@ -1,15 +1,15 @@
 import asyncio
 import io
 import logging
+import re
 from dataclasses import asdict, dataclass
 from pathlib import Path
-import re
+from typing import TypedDict, Unpack
 
 import edge_tts
 import simpleaudio
 from pydub import AudioSegment
-
-from tts_shared.abstracts import TTSConfig, TTSClient
+from tts_shared.abstracts import TTSClient, TTSConfig
 from tts_shared.exceptions import (
     ConfigError,
     CreateSpeechError,
@@ -47,6 +47,13 @@ class EdgeTTSConfig(TTSConfig):
             raise ConfigError(f"volume must end with %, got {self.volume}")
         if not self.pitch.endswith("Hz"):
             raise ConfigError(f"pitch must end with Hz, got {self.pitch}")
+
+
+class EdgeTTSConfigDict(TypedDict):
+    voice: str
+    rate: str
+    volume: str
+    pitch: str
 
 
 class EdgeTTSClient(TTSClient):
@@ -111,7 +118,7 @@ class EdgeTTSClient(TTSClient):
             return combined_audio_data
         return b""
 
-    def update_config(self, **kwargs: EdgeTTSConfig) -> None:
+    def update_config(self, **kwargs: Unpack[EdgeTTSConfigDict]) -> None:
         """Update configuration parameters"""
         for key, value in kwargs.items():
             if hasattr(self.config, key):

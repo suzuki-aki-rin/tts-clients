@@ -3,6 +3,7 @@ import asyncio
 import io
 import logging
 import re
+from typing import TypedDict, Unpack
 import wave
 from dataclasses import dataclass
 from pathlib import Path
@@ -70,6 +71,16 @@ class VoicevoxConfig(TTSConfig):
             )
         if self.port < 1000 or self.port > 99999:
             raise ConfigError(f"port must be 4 or 5 digit, got {self.port}")
+
+
+class VoicevoxConfigDict(TypedDict):
+    speaker: int
+    speed: float
+    pitch: float
+    intonation: float
+    volume: float
+    host: str
+    port: int
 
 
 #  SECTION:=============================================================
@@ -187,7 +198,8 @@ class VoicevoxClient(TTSClient):
     #            Functions, Main
     #  =====================================================================
 
-    def update_config(self, **kwargs: VoicevoxConfig) -> None:
+    def update_config(self, **kwargs: Unpack[VoicevoxConfigDict]) -> None:
+        # def update_config(self, **kwargs: VoicevoxConfig) -> None:
         """Update configuration parameters"""
         for key, value in kwargs.items():
             if hasattr(self.config, key):
@@ -251,6 +263,7 @@ async def main():
     try:
         client = VoicevoxClient()
         await client.create_play_speech("hello")
+        client.update_config()
 
     except (
         ConfigError,
