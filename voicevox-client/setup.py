@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="tts-voicevox",
+    name="voicevox-tts-client",
     version="1.0.1",
     license="MIT",
     url="https://github.com/suzuki-aki-rin/tts-clients/voicevox-client",
