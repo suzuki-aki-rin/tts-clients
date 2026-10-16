@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="edge-tts-client",
-    version="1.0.1",
+    version="1.0.2",
     license="MIT",
     url="https://github.com/suzuki-aki-rin/tts-clients/edge-tts-client",
     packages=find_packages(),
