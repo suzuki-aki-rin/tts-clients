@@ -7,7 +7,7 @@ setup(
     url="https://github.com/suzuki-aki-rin/tts-clients/edge-tts-client",
     packages=find_packages(),
     install_requires=[
-        "edge-tts~=7.2.3",
+        "edge-tts~=7.3.1",
         "audioop-lts~=0.2.2",
         "pydub~=0.25.1",
         "simpleaudio-patched~=1.0.5",
